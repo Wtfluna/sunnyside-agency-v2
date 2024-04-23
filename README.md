@@ -12,7 +12,7 @@ The graphic designer gave all the elements.
 - Use modern positioning techniques using Grid or Flexbox model
 - Create a "pixel-perfect" integration from a given wireframe
 
-## What should you use and investigate? (feel free to explorer even further)
+## What to use and investigate?
 
 - B.E.M.
 - Semantic HTML
