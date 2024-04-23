@@ -1,0 +1,366 @@
+/* TODO: Responsive + BurgerMenu
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* PAGE SECTIONS */
+
+body {
+  width: 1440px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 0 15%;
+}
+
+.container {
+  width: 1440px;
+}
+
+.main-header {
+  background-image: url(/assets/photos/header.jpg);
+  background-size: cover;
+  width: 1440px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 600px);
+  place-items: center;
+  margin-bottom: 100px;
+}
+
+.testimonials {
+  width: 1110px;
+  height: 432px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer {
+  width: 1440px;
+  height: 350px;
+  background-color: #90d4c6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SMALLER ELEMENTS */
+
+/* PAGE ELEMENTS */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", serif;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: #24303e;
+}
+
+h3 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10%;
+}
+
+/* HEADER */
+
+.header-nav {
+  width: 1352px;
+  height: 56px;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 34px 48px 126px;
+}
+
+.header-logo {
+  margin-right: 680px;
+  width: 170px;
+  height: 34px;
+}
+
+.header-nav a {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.13px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.header-nav .header-nav-contact-button {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #24303e;
+  width: 78px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+}
+
+.header-nav .header-nav-contact-button:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-title {
+  font-size: 56px;
+  line-height: 70px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+
+.header-arrow-down {
+  display: flex;
+  align-self: center;
+  width: 30px;
+  height: 108px;
+}
+
+/* ARTICLE SECTION */
+
+.box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: hsl(15, 44%, 96%);
+}
+
+.grid-container article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 138px;
+}
+
+.box p {
+  color: #808397;
+  line-height: 30px;
+}
+
+.box a {
+  font-family: "Fraunces", sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-self: flex-start;
+  margin-left: 1%;
+}
+
+.box .learn-more-yellow:hover,
+.box .learn-more-red:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 6px;
+  text-decoration-color: hsl(51, 100%, 49%);
+  text-underline-offset: -0.2px;
+}
+
+.box .learn-more-yellow:hover {
+  text-decoration-color: hsl(51, 100%, 49%);
+}
+
+.box .learn-more-red:hover {
+  text-decoration-color: hsl(7, 99%, 70%);
+}
+
+.graphic-design-box,
+.photography-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.graphic-design-box {
+  background-image: url(/assets/photos/graphic-design.jpg);
+}
+
+.graphic-design-box article,
+.photography-box article {
+  width: 339px;
+  height: 143px;
+  margin-bottom: 60px;
+}
+
+.graphic-design-box h3,
+.photography-box h3 {
+  margin-bottom: 20px;
+}
+
+.graphic-design-box h3 {
+  color: hsl(167, 40%, 24%);
+}
+
+.graphic-design-box p,
+.photography-box p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.graphic-design-box p {
+  color: hsl(167, 40%, 24%);
+}
+
+.photography-box {
+  background-image: url(/assets/photos/photography.jpg);
+}
+
+.photography-box h3 {
+  color: hsl(198, 62%, 26%);
+}
+
+.photography-box p {
+  color: hsl(198, 62%, 26%);
+}
+
+/* TESTIMONIAL SECTION */
+
+.testimonial-header {
+  width: 1440px;
+  height: 25px;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a7aaad;
+}
+
+.testimonial-box {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  margin: 66px;
+}
+
+.testimonial-box img {
+  width: 72px;
+  border-radius: 50%;
+  margin-bottom: 44px;
+}
+
+.testimonials p {
+  width: 350px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #5b636d;
+}
+
+.testimonial-box .people {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #a7aaad;
+}
+
+/* GALLERY SECTION */
+
+.gallery img {
+  width: 360px;
+  height: 447px;
+}
+
+/* FOOTER SECTION */
+
+.footer-logo {
+  width: 170px;
+  height: 34px;
+  margin: 72px 640px 52px 629px;
+  color: #2c7566;
+}
+
+.footer-nav-links {
+  width: 298px;
+  height: 26px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-bottom: 88px;
+}
+
+.footer-nav-links a {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #458d7e;
+  line-height: 26px;
+  letter-spacing: -0.13px;
+  text-decoration: none;
+  margin-right: 56px;
+  transition: 0.3s ease-in-out;
+}
+
+.footer-nav-links a:hover {
+  color: #fff;
+}
+
+.footer-nav-social-icons {
+  width: 164px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  margin-bottom: 72px;
+}
+
+.footer .footer-nav-social-icons a {
+  margin-right: 28px;
+  /* transition: 0.3s ease-in-out; */
+}
+
+/* .footer-nav-social-icons a:hover {
+  fill: #fff;
+} */
