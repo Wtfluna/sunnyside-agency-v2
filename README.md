@@ -2,8 +2,6 @@
 
 ## The mission
 
-![desktop preview](./desktop-preview.jpg)
-
 Implement a design for a newly created agency.
 
 The graphic designer gave all the elements.
